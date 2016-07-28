@@ -1,0 +1,22 @@
+#left-column {
+  background-color: lightsalmon;
+  max-width: 200px;
+  min-width: 200px;
+}
+
+#center-column {
+  background-color: lightgreen;
+}
+
+#right-column {
+  background-color: lightblue;
+  display:flex;
+  width: 10px;
+  //max-width: 400px;
+  width: 200px;
+}
+
+.whole-app-container {
+  width: 700px;
+  height: 500px;
+}
