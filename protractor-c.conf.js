@@ -8,6 +8,13 @@ exports.config = {
   //seleniumAddress: 'http://localhost:4444/wd/hub',
   //seleniumServerJar: deprecated, this should be set on node_modules/protractor/config.json
 
+
+  framework: 'custom',
+
+  // path relative to the current config file
+  frameworkPath: require.resolve('protractor-cucumber-framework'),
+
+
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
     'browserName': 'chrome'
@@ -17,8 +24,12 @@ exports.config = {
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  specs: [paths.e2e + '/**/*.spec.js'],
+  specs: ['gg/**/*.feature'],
 
+  cucumberOpts: {
+    require: 'gg/**/*.steps.js'
+
+  },
   // Options to be passed to Jasmine-node.
   jasmineNodeOpts: {
     showColors: true,
