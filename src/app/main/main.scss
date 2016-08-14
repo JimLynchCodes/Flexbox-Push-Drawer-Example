@@ -11,12 +11,21 @@
 #right-column {
   background-color: lightblue;
   display:flex;
-  width: 10px;
-  //max-width: 400px;
   width: 200px;
+}
+
+#right-column > .flex {
+  z-index: -1;
+  overflow: hidden;
 }
 
 .whole-app-container {
   width: 700px;
   height: 500px;
+  overflow:hidden;
+}
+
+.right-column-content {
+  min-width: 200px;
+  display: inline;
 }
