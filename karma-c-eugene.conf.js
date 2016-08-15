@@ -8,8 +8,12 @@ module.exports = function (config) {
     frameworks: ['cucumber-js'],
 
     plugins: [
-      'karma-chrome-launcher',
+      // 'karma-chrome-launcher',
       // require('./lib/index.js')
+
+    'karma-chrome-launcher',
+    // 'karma-jasmine'
+    'karma-cucumber-js'
     ],
 
     // list of files / patterns to load in the browser

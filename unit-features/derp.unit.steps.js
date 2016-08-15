@@ -3,5 +3,5 @@ __adapter__.addStepDefinitions(function (scenario) {
   scenario.When(/^vv$/, function () { });
   scenario.When(/^it is not executed$/, function (callback) { callback(null, 'pending'); });
   scenario.Then(/^cc$/, function () { });
-  scenario.Then(/^test fails$/, function (callback) { callback(new Error('Step failed')); });
+  // scenario.Then(/^cc$/, function (callback) { callback(new Error('Step failed')); });
 });
